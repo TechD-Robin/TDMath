@@ -10,6 +10,8 @@
 		2A145B451A2F56DA00FDDF00 /* TDMath.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A145B441A2F56DA00FDDF00 /* TDMath.h */; };
 		2A145B471A2F56DA00FDDF00 /* TDMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A145B461A2F56DA00FDDF00 /* TDMath.m */; };
 		2A145B4D1A2F56DA00FDDF00 /* libTDMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A145B411A2F56DA00FDDF00 /* libTDMath.a */; };
+		2A145B631A2F70AE00FDDF00 /* TDTrigonometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A145B621A2F70AE00FDDF00 /* TDTrigonometry.m */; };
+		2A145B651A2F711D00FDDF00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A145B641A2F711D00FDDF00 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,9 @@
 		2A145B461A2F56DA00FDDF00 /* TDMath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDMath.m; sourceTree = "<group>"; };
 		2A145B4C1A2F56DA00FDDF00 /* TDMathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDMathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A145B521A2F56DA00FDDF00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A145B611A2F709900FDDF00 /* TDTrigonometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTrigonometry.h; sourceTree = "<group>"; };
+		2A145B621A2F70AE00FDDF00 /* TDTrigonometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTrigonometry.m; sourceTree = "<group>"; };
+		2A145B641A2F711D00FDDF00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A145B651A2F711D00FDDF00 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +71,7 @@
 		2A145B381A2F56DA00FDDF00 = {
 			isa = PBXGroup;
 			children = (
+				2A145B661A2F718200FDDF00 /* Frameworks */,
 				2A145B431A2F56DA00FDDF00 /* TDMath */,
 				2A145B501A2F56DA00FDDF00 /* TDMathTests */,
 				2A145B421A2F56DA00FDDF00 /* Products */,
@@ -85,6 +92,8 @@
 			children = (
 				2A145B441A2F56DA00FDDF00 /* TDMath.h */,
 				2A145B461A2F56DA00FDDF00 /* TDMath.m */,
+				2A145B611A2F709900FDDF00 /* TDTrigonometry.h */,
+				2A145B621A2F70AE00FDDF00 /* TDTrigonometry.m */,
 			);
 			path = TDMath;
 			sourceTree = "<group>";
@@ -103,6 +112,14 @@
 				2A145B521A2F56DA00FDDF00 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A145B661A2F718200FDDF00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A145B641A2F711D00FDDF00 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A145B631A2F70AE00FDDF00 /* TDTrigonometry.m in Sources */,
 				2A145B471A2F56DA00FDDF00 /* TDMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +374,7 @@
 				2A145B571A2F56DA00FDDF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A145B581A2F56DA00FDDF00 /* Build configuration list for PBXNativeTarget "TDMathTests" */ = {
 			isa = XCConfigurationList;
@@ -364,6 +383,7 @@
 				2A145B5A1A2F56DA00FDDF00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

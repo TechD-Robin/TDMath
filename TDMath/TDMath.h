@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "TDTrigonometry.h"
+
 @interface TDMath : NSObject
 
 @end
