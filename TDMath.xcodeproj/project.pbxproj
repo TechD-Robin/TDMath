@@ -12,6 +12,7 @@
 		2A145B4D1A2F56DA00FDDF00 /* libTDMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A145B411A2F56DA00FDDF00 /* libTDMath.a */; };
 		2A145B631A2F70AE00FDDF00 /* TDTrigonometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A145B621A2F70AE00FDDF00 /* TDTrigonometry.m */; };
 		2A145B651A2F711D00FDDF00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A145B641A2F711D00FDDF00 /* CoreGraphics.framework */; };
+		2A4078751A38C80F003D939F /* TDGeometricFigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4078741A38C80F003D939F /* TDGeometricFigure.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		2A145B611A2F709900FDDF00 /* TDTrigonometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTrigonometry.h; sourceTree = "<group>"; };
 		2A145B621A2F70AE00FDDF00 /* TDTrigonometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDTrigonometry.m; sourceTree = "<group>"; };
 		2A145B641A2F711D00FDDF00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2A4078731A38C7E0003D939F /* TDGeometricFigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDGeometricFigure.h; sourceTree = "<group>"; };
+		2A4078741A38C80F003D939F /* TDGeometricFigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDGeometricFigure.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				2A145B461A2F56DA00FDDF00 /* TDMath.m */,
 				2A145B611A2F709900FDDF00 /* TDTrigonometry.h */,
 				2A145B621A2F70AE00FDDF00 /* TDTrigonometry.m */,
+				2A4078731A38C7E0003D939F /* TDGeometricFigure.h */,
+				2A4078741A38C80F003D939F /* TDGeometricFigure.m */,
 			);
 			path = TDMath;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A145B631A2F70AE00FDDF00 /* TDTrigonometry.m in Sources */,
+				2A4078751A38C80F003D939F /* TDGeometricFigure.m in Sources */,
 				2A145B471A2F56DA00FDDF00 /* TDMath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +272,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -300,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

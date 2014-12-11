@@ -55,6 +55,10 @@ CGFloat calculateTriangleAdjacentWithHypotenuse( CGFloat sideHypotenuse, CGFloat
 CGFloat calculateTriangleOppositeWithHypotenuse( CGFloat sideHypotenuse, CGFloat tanTheta );
 
 //  ------------------------------------------------------------------------------------------------
+//  ------------------------------------------------------------------------------------------------
+
+
+//  ------------------------------------------------------------------------------------------------
 
 
 #endif
