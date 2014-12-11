@@ -30,7 +30,7 @@ double radianToDegree( double radian )
 //  ------------------------------------------------------------------------------------------------
 double degreeWithCircleAliquot( int aliquotPart )
 {
-    return ( 360.0f / fabs( aliquotPart ) );
+    return ( 360.0f / abs( aliquotPart ) );
 }
 
 
