@@ -19,6 +19,7 @@
 
 
 //  ------------------------------------------------------------------------------------------------
+//  ------------------------------------------------------------------------------------------------
 /**
  *  @brief calculate hypotenuse side length of triangle.
  *  use adjacent side and opposite site to calculate typotenuse side of triangle.

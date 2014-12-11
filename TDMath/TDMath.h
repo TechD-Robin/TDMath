@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Availability.h>
 
-#import "TDTrigonometry.h"
+#ifndef _TDMATH_
+    #define _TDMATH_
 
-@interface TDMath : NSObject
+    #import "TDTrigonometry.h"
+    #import "TDGeometricFigure.h"
 
-@end
+#endif  //  End of _TDMATH_.
+
+

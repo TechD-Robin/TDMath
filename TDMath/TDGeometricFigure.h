@@ -11,6 +11,9 @@
 #ifndef TDMath_TDGeometricFigure_h
 #define TDMath_TDGeometricFigure_h
 
+//  ------------------------------------------------------------------------------------------------
+//  ------------------------------------------------------------------------------------------------
+
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
@@ -89,6 +92,9 @@ CGFloat radianBetweenPoints( CGPoint first, CGPoint second );
  */
 CGFloat radianBetweenLines( CGPoint firstStart, CGPoint firstEnd, CGPoint secondStart, CGPoint secondEnd );
 
+
+//  ------------------------------------------------------------------------------------------------
+//  ------------------------------------------------------------------------------------------------
 
 //  ------------------------------------------------------------------------------------------------
 

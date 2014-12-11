@@ -8,6 +8,6 @@
 
 #import "TDMath.h"
 
-@implementation TDMath
-
-@end
+//@implementation TDMath
+//
+//@end
