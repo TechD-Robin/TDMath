@@ -24,9 +24,9 @@
  *  @brief convert degrees to radians.
  *  convert degrees to radians.
  *
- *  @param degree           degrees value.
+ *  @param degree                   degrees value.
  *
- *  @return                 converted value in radians.
+ *  @return                         converted value in radians.
  */
 double degreeToRadian( double degree );
 
@@ -35,9 +35,9 @@ double degreeToRadian( double degree );
  *  @brief convert radians to degrees
  *  convert radians to degrees
  *
- *  @param radian           radians value.
+ *  @param radian                   radians value.
  *
- *  @return                 converted value in degrees.
+ *  @return                         converted value in degrees.
  */
 double radianToDegree( double radian );
 
@@ -46,9 +46,9 @@ double radianToDegree( double radian );
  *  @brief to divide circle into n equal parts
  *  to divide circle into n equal parts
  *
- *  @param aliquotPart      divide value of circle aliguot.
+ *  @param aliquotPart              divide value of circle aliguot.
  *
- *  @return                 degrees of aliguot part.
+ *  @return                         degrees of aliguot part.
  */
 double degreeWithCircleAliquot( int aliquotPart );
 
@@ -59,10 +59,10 @@ double degreeWithCircleAliquot( int aliquotPart );
  *  @brief calculate distance between two points.
  *  calculate distance between first point and second point.
  *
- *  @param first            first point.
- *  @param second           second point.
+ *  @param first                    first point.
+ *  @param second                   second point.
  *
- *  @return                 calculated value for distance.
+ *  @return                         calculated value for distance.
  */
 CGFloat distanceBetweenPoints( CGPoint first, CGPoint second );
 
@@ -71,10 +71,10 @@ CGFloat distanceBetweenPoints( CGPoint first, CGPoint second );
  *  @brief calculate radian between two points.
  *  calculate radian between first point and second point.
  *
- *  @param first            first point.
- *  @param second           second point.
+ *  @param first                    first point.
+ *  @param second                   second point.
  *
- *  @return                 calculated value for radians.
+ *  @return                         calculated value for radians.
  */
 CGFloat radianBetweenPoints( CGPoint first, CGPoint second );
 
@@ -83,12 +83,12 @@ CGFloat radianBetweenPoints( CGPoint first, CGPoint second );
  *  @brief calculate radian between two lines.
  *  calculate radian between first line and second line.
  *
- *  @param firstStart       start point of first line.
- *  @param firstEnd         end point of first line.
- *  @param secondStart      start point of second line.
- *  @param secondEnd        end point of second line.
+ *  @param firstStart               start point of first line.
+ *  @param firstEnd                 end point of first line.
+ *  @param secondStart              start point of second line.
+ *  @param secondEnd                end point of second line.
  *
- *  @return                 calculated value for radians.
+ *  @return                         calculated value for radians.
  */
 CGFloat radianBetweenLines( CGPoint firstStart, CGPoint firstEnd, CGPoint secondStart, CGPoint secondEnd );
 
