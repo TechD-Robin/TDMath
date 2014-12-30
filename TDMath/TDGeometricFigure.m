@@ -76,6 +76,31 @@ CGFloat radianBetweenLines( CGPoint firstStart, CGPoint firstEnd, CGPoint second
 }
 
 //  ------------------------------------------------------------------------------------------------
+CGSize calculateProportionalMaxSizeWithLimit( CGFloat ratio, CGSize baseSize, CGSize limitSize )
+{
+    if ( ( 0.0f == ratio ) || ( CGSizeEqualToSize( baseSize, CGSizeZero ) == true ) )
+    {
+        return CGSizeZero;
+    }
+    
+    CGFloat                         H;
+    CGSize                          furtureSize;
+    
+    furtureSize                     = baseSize;
+    furtureSize.width               = ( ( furtureSize.width > limitSize.width ) ? limitSize.width : furtureSize.width );
+    furtureSize.height              = ( ( furtureSize.height > limitSize.height ) ? limitSize.height : furtureSize.height );
+    H                               = furtureSize.width * ratio;
+    if ( H <= furtureSize.height )
+    {
+        furtureSize.height          = H;
+    }
+    else
+    {
+        furtureSize.width           *= ( furtureSize.height / H );
+    }
+    return furtureSize;
+}
+
 
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------

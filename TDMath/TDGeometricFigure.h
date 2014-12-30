@@ -95,6 +95,20 @@ CGFloat radianBetweenLines( CGPoint firstStart, CGPoint firstEnd, CGPoint second
 
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------
+/**
+ *  @brief calculate max size of proportional for ratio with limit size.
+ *  calculate max size of proportional for ratio with limit size.
+ *
+ *  @param ratio                    ration ( height/width )
+ *  @param baseSize                 be calculated's size.
+ *  @param limitSize                max size of limit. ( the result size cannot more then the limit width or height )
+ *
+ *  @return size|ZeroSize           the result size or ZeroSize.
+ */
+CGSize calculateProportionalMaxSizeWithLimit( CGFloat ratio, CGSize baseSize, CGSize limitSize );
+
+
+//  ------------------------------------------------------------------------------------------------
 
 //  ------------------------------------------------------------------------------------------------
 
@@ -103,4 +117,6 @@ CGFloat radianBetweenLines( CGPoint firstStart, CGPoint firstEnd, CGPoint second
 
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------
+
+
 
