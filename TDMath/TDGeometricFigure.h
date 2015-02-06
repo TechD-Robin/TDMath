@@ -92,20 +92,44 @@ CGFloat radianBetweenPoints( CGPoint first, CGPoint second );
  */
 CGFloat radianBetweenLines( CGPoint firstStart, CGPoint firstEnd, CGPoint secondStart, CGPoint secondEnd );
 
-
 //  ------------------------------------------------------------------------------------------------
+//  ------------------------------------------------------------------------------------------------
+/**
+ *  @brief calculate size of proportional for ratio.
+ *  calculate size of proportional for ratio.
+ *
+ *  @param ratio                    ratio ( height/width )
+ *  @param baseSize                 be calculated's size.
+ *
+ *  @return size|ZeroSize           the result size or ZeroSize.
+ */
+CGSize calculateProportionalSize( CGFloat ratio, CGSize baseSize );
+
 //  ------------------------------------------------------------------------------------------------
 /**
  *  @brief calculate max size of proportional for ratio with limit size.
  *  calculate max size of proportional for ratio with limit size.
  *
- *  @param ratio                    ration ( height/width )
+ *  @param ratio                    ratio ( height/width )
  *  @param baseSize                 be calculated's size.
  *  @param limitSize                max size of limit. ( the result size cannot more then the limit width or height )
  *
  *  @return size|ZeroSize           the result size or ZeroSize.
  */
 CGSize calculateProportionalMaxSizeWithLimit( CGFloat ratio, CGSize baseSize, CGSize limitSize );
+
+//  ------------------------------------------------------------------------------------------------
+/**
+ *  @brief calculate a new rect, rect's size of proportional for ratio, rect's origin with parent's size.
+ *  calculate a new rect, rect's size of proportional for ratio, rect's origin with parent's size.
+ *
+ *  @param ratio                    ratio ( height/width )
+ *  @param baseSize                 be calculated's size.
+ *  @param parentSize               parent's size.
+ *
+ *  @return rect|ZeroRect           the result rect or ZeroRect.
+ */
+CGRect calculateProportionalRectWithParentSize( CGFloat ratio, CGSize baseSize, CGSize parentSize );
 
 
 //  ------------------------------------------------------------------------------------------------

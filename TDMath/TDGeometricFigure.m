@@ -76,6 +76,31 @@ CGFloat radianBetweenLines( CGPoint firstStart, CGPoint firstEnd, CGPoint second
 }
 
 //  ------------------------------------------------------------------------------------------------
+//  ------------------------------------------------------------------------------------------------
+CGSize calculateProportionalSize( CGFloat ratio, CGSize baseSize )
+{
+    if ( ( 0.0f == ratio ) || ( CGSizeEqualToSize( baseSize, CGSizeZero ) == true ) )
+    {
+        return CGSizeZero;
+    }
+    
+    CGFloat                         H;
+    CGSize                          furtureSize;
+    
+    furtureSize                     = baseSize;
+    H                               = furtureSize.width * ratio;
+    if ( H <= furtureSize.height )
+    {
+        furtureSize.height          = H;
+    }
+    else
+    {
+        furtureSize.width           *= ( furtureSize.height / H );
+    }
+    return furtureSize;
+}
+
+//  ------------------------------------------------------------------------------------------------
 CGSize calculateProportionalMaxSizeWithLimit( CGFloat ratio, CGSize baseSize, CGSize limitSize )
 {
     if ( ( 0.0f == ratio ) || ( CGSizeEqualToSize( baseSize, CGSizeZero ) == true ) )
@@ -101,11 +126,27 @@ CGSize calculateProportionalMaxSizeWithLimit( CGFloat ratio, CGSize baseSize, CG
     return furtureSize;
 }
 
+//  ------------------------------------------------------------------------------------------------
+CGRect calculateProportionalRectWithParentSize( CGFloat ratio, CGSize baseSize, CGSize parentSize )
+{
+    if ( ( 0.0f == ratio ) || ( CGSizeEqualToSize( baseSize, CGSizeZero ) == true ) || ( CGSizeEqualToSize( parentSize,  CGSizeZero ) == true ) )
+    {
+        return CGRectZero;
+    }
+    
+    CGRect                          furtureRect;
+    
+    furtureRect                     = CGRectZero;
+    furtureRect.size                = calculateProportionalSize( ratio, baseSize );
+    
+    //  calculate position with parent size.
+    furtureRect.origin.x            = ( ( parentSize.width - furtureRect.size.width) / 2.0f );
+    furtureRect.origin.y            = ( ( parentSize.height - furtureRect.size.height) / 2.0f );
+    return furtureRect;
+}
 
 //  ------------------------------------------------------------------------------------------------
 //  ------------------------------------------------------------------------------------------------
-
-
 
 
 
