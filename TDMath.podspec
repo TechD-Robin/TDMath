@@ -17,18 +17,15 @@ Pod::Spec.new do |s|
 
   s.name         = "TDMath"
   s.version      = "0.0.1"
-  s.summary      = "Math function of Tech.D."
+  s.summary      = "These are base Math formula of Tech.D."
 
   s.description  = <<-DESC
-                   A longer description of TDMath in Markdown format.
+                   These are base Math formula of Tech.D.
 
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
+                   * This repository is provide base Math methods to others.
                    DESC
 
-  s.homepage     = "https://git.techd.idv.tw:5001"
+  s.homepage     = "https://github.com/TechD-Robin/TDMath/"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -40,9 +37,9 @@ Pod::Spec.new do |s|
   #
 
   # s.license      = "No License"
-  # s.license      = 'MIT'
   # s.license      = { :type => "MIT", :file => "LICENSE" }
-  s.license      = { :type=> "No License", :file => "LICENSE" }
+  # s.license      = { :type=> "No License", :file => "LICENSE" }
+  s.license      = 'MIT'
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -56,9 +53,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "Robin Hsu" => "robinhsu599+dev@gmail.com" }
-  # Or just: s.author    = "Robin Hsu"
-  # s.authors            = { "Robin Hsu" => "robinhsu599+dev@gmail.com" }
-  # s.social_media_url   = "http://twitter.com/Robin Hsu"
+  s.social_media_url   = "https://plus.google.com/+RobinHsu"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -67,7 +62,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -80,8 +75,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "git://git.techd.idv.tw/Libraries/TDMath.git", :tag => "0.0.1" }
-
+  s.source       = { :git => "https://github.com/TechD-Robin/TDMath.git", :tag => "#{s.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
